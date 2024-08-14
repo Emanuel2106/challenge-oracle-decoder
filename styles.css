@@ -1,0 +1,158 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E8F6F3; /* Fondo suave en tonos pastel */
+    color: #34495E; /* Texto oscuro para buen contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1440px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    width: 60%;
+}
+
+.right-panel {
+    width: 400px;
+    height: 485px;
+    background-color: #F7F9FC; /* Fondo claro y suave */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 288px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #AAB7C4; /* Borde suave */
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 10px;
+    resize: none;
+    color: #34495E; /* Texto oscuro */
+    background-color: #ECF0F1; /* Fondo claro */
+    box-sizing: border-box;
+}
+
+.validation {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7B8794; /* Texto gris */
+    opacity: 0.8;
+    margin-top: 24px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.btn {
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+    text-align: center;
+    width: 328px;
+    height: 67px;
+}
+
+.btn-encrypt {
+    background-color: #82E0AA; /* Verde suave */
+    color: #FFFFFF;
+}
+
+.btn-encrypt:hover {
+    background-color: #58D68D;
+}
+
+.btn-decrypt {
+    background-color: #F1948A; /* Rojo suave */
+    color: #FFFFFF;
+}
+
+.btn-decrypt:hover {
+    background-color: #EC7063;
+}
+
+.output {
+    font-size: 24px;
+    line-height: 150%;
+    color: #34495E; /* Texto oscuro */
+    max-width: 336px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.btn-copy {
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #34495E; /* Borde oscuro */
+    color: #34495E; /* Texto oscuro */
+    background-color: #D5DBDB; /* Fondo claro */
+    margin-top: auto;
+}
+
+.btn-copy:hover {
+    background-color: #BFC9CA; /* Fondo ligeramente más oscuro al pasar el mouse */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 48px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .btn, .btn-copy {
+        width: 100%;
+    }
+}
